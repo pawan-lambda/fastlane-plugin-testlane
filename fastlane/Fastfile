@@ -1,0 +1,7 @@
+lane :test do
+  upload_to_lambdatest_app_live(
+    lt_username: ENV["LT_USERNAME"],
+    lt_access_key: ENV["LT_ACCESS_KEY"],
+    file_path: "./proverbial_android.apk"
+  )
+end
